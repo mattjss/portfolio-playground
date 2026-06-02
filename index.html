@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio playground</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { background: #101010; }
+    body {
+      width: 100%; min-height: 100%;
+      background: #101010;
+      color: #fafafa;
+      display: flex; flex-direction: column; align-items: center;
+      overflow-y: auto;
+      font-family: system-ui, -apple-system, sans-serif;
+      padding: 48px 24px;
+    }
+    main {
+      display: flex; flex-direction: column; gap: 40px;
+      max-width: 600px; width: 100%;
+    }
+    header { display: flex; flex-direction: column; gap: 6px; }
+    h1 {
+      font-size: 11px; font-weight: 500;
+      letter-spacing: 0.18em; text-transform: uppercase;
+      color: rgba(255,255,255,0.75);
+    }
+    .subtitle { font-size: 11px; color: rgba(255,255,255,0.22); letter-spacing: 0.04em; }
+    .list { display: flex; flex-direction: column; }
+
+    .item-wrap {
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .item-wrap:first-child { border-top: 1px solid rgba(255,255,255,0.06); }
+
+    a.item {
+      display: flex; flex-direction: column;
+      padding: 20px 0 16px;
+      text-decoration: none; color: inherit;
+      transition: opacity 0.15s;
+    }
+    a.item:hover { opacity: 0.6; }
+    a.item:active { opacity: 0.35; }
+
+    .item-top {
+      display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    }
+    .info { display: flex; flex-direction: column; gap: 4px; }
+    .name { font-size: 13px; color: rgba(255,255,255,0.82); }
+    .desc { font-size: 11px; color: rgba(255,255,255,0.26); }
+    .right { display: flex; align-items: center; gap: 16px; flex-shrink: 0; }
+    .tag { font-size: 10px; letter-spacing: 0.08em; color: rgba(255,255,255,0.13); }
+    .arrow { font-size: 11px; color: rgba(255,255,255,0.15); }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Portfolio Playground</h1>
+      <p class="subtitle">All projects · click to preview</p>
+    </header>
+    <div class="list">
+
+
+      <div class="item-wrap">
+        <a class="item" href="https://mattjss.github.io/terminal-bio/" target="_blank">
+          <div class="item-top">
+            <div class="info">
+              <span class="name">Terminal Bio</span>
+              <span class="desc">An About Me hero in terminal form. Auto-cycles through identity, interests, sports, health, and more.</span>
+            </div>
+            <div class="right">
+              <span class="tag">canvas · monospace · bio</span>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="item-wrap">
+        <a class="item" href="https://mattjss.github.io/terminal/" target="_blank">
+          <div class="item-top">
+            <div class="info">
+              <span class="name">Terminal</span>
+              <span class="desc">A minimal terminal UI typing out AI-style log output in real time. Monospace aesthetic with scene controls.</span>
+            </div>
+            <div class="right">
+              <span class="tag">canvas · monospace · agentic UI</span>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="item-wrap">
+        <a class="item" href="https://mattjss.github.io/cloth/" target="_blank">
+          <div class="item-top">
+            <div class="info">
+              <span class="name">Fabric</span>
+              <span class="desc">Move your cursor across the surface. Threads under the most stress glow brighter. Click to send a pulse wave.</span>
+            </div>
+            <div class="right">
+              <span class="tag">canvas · spring physics</span>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="item-wrap">
+        <a class="item" href="https://mattjss.github.io/Vector/" target="_blank">
+          <div class="item-top">
+            <div class="info">
+              <span class="name">Vector</span>
+              <span class="desc">A 16×16 grid of bars that rotate to face your cursor like compass needles. Click fires a rotational shockwave.</span>
+            </div>
+            <div class="right">
+              <span class="tag">DOM · CSS · angular spring</span>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="item-wrap">
+        <a class="item" href="https://mattjss.github.io/Spider-Mesh/" target="_blank">
+          <div class="item-top">
+            <div class="info">
+              <span class="name">Spider Mesh</span>
+              <span class="desc">A dot grid that clings to your cursor like a web. Left click fires a ripple, right click changes the color.</span>
+            </div>
+            <div class="right">
+              <span class="tag">canvas · spider mesh · ripple</span>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="item-wrap">
+        <a class="item" href="https://mattjss.github.io/flock/" target="_blank">
+          <div class="item-top">
+            <div class="info">
+              <span class="name">Flock</span>
+              <span class="desc">Herd a flock of birds into a target ring. Your cursor scares them.</span>
+            </div>
+            <div class="right">
+              <span class="tag">canvas · boids · game</span>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="item-wrap">
+        <a class="item" href="https://mattjss.github.io/Sync/" target="_blank">
+          <div class="item-top">
+            <div class="info">
+              <span class="name">Sync</span>
+              <span class="desc">Interaction design for an AI calendar sync interface. Communicates background AI activity clearly.</span>
+            </div>
+            <div class="right">
+              <span class="tag">React · AI UI · calendar</span>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="item-wrap">
+        <a class="item" href="https://mattjss.github.io/Save-Button/" target="_blank">
+          <div class="item-top">
+            <div class="info">
+              <span class="name">Save Button</span>
+              <span class="desc">A save button with layered micro-interaction states — idle, loading, and confirmed. Each transition is physically grounded.</span>
+            </div>
+            <div class="right">
+              <span class="tag">React · Tailwind · micro-interaction</span>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="item-wrap">
+        <a class="item" href="https://mattjss.github.io/Agentic-Animations-2/" target="_blank">
+          <div class="item-top">
+            <div class="info">
+              <span class="name">Agentic Pixel Loaders</span>
+              <span class="desc">A growing library of loading state animations built for agentic UI. Motion patterns for AI-driven interfaces.</span>
+            </div>
+            <div class="right">
+              <span class="tag">React · Tailwind · motion</span>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="item-wrap">
+        <a class="item" href="https://mattjss.github.io/Matrix-Loader/" target="_blank">
+          <div class="item-top">
+            <div class="info">
+              <span class="name">Matrix Loader</span>
+              <span class="desc">A terminal-style AI agent workflow animation. Simulates agentic process output in JetBrains Mono.</span>
+            </div>
+            <div class="right">
+              <span class="tag">React · monospace · agentic UI</span>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="item-wrap">
+        <a class="item" href="https://mattjss.github.io/Logo-Carousel/" target="_blank">
+          <div class="item-top">
+            <div class="info">
+              <span class="name">Logo Carousel</span>
+              <span class="desc">A seamlessly looping logo carousel with edge fades.</span>
+            </div>
+            <div class="right">
+              <span class="tag">React · CSS · marquee</span>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>
