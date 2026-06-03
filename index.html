@@ -30,11 +30,13 @@
     .list { display: flex; flex-direction: column; }
 
     .item-wrap {
+      display: flex; align-items: stretch;
       border-bottom: 1px solid rgba(255,255,255,0.06);
     }
     .item-wrap:first-child { border-top: 1px solid rgba(255,255,255,0.06); }
 
     a.item {
+      flex: 1;
       display: flex; flex-direction: column;
       padding: 20px 0 16px;
       text-decoration: none; color: inherit;
@@ -52,6 +54,19 @@
     .right { display: flex; align-items: center; gap: 16px; flex-shrink: 0; }
     .tag { font-size: 10px; letter-spacing: 0.08em; color: rgba(255,255,255,0.13); }
     .arrow { font-size: 11px; color: rgba(255,255,255,0.15); }
+
+    a.dl-btn {
+      display: flex; align-items: center; justify-content: center;
+      padding: 0 16px;
+      color: rgba(255,255,255,0.18);
+      font-size: 13px;
+      text-decoration: none;
+      border-left: 1px solid rgba(255,255,255,0.04);
+      transition: color 0.15s;
+      flex-shrink: 0;
+    }
+    a.dl-btn:hover { color: rgba(255,255,255,0.55); }
+    a.dl-btn:active { color: rgba(255,255,255,0.85); }
   </style>
 </head>
 <body>
@@ -75,6 +90,7 @@
             </div>
           </div>
         </a>
+        <a class="dl-btn" href="https://github.com/mattjss/terminal-intro/archive/refs/heads/main.zip" download title="Download source">↓</a>
       </div>
 
       <div class="item-wrap">
@@ -90,6 +106,7 @@
             </div>
           </div>
         </a>
+        <a class="dl-btn" href="https://github.com/mattjss/satoshi/archive/refs/heads/main.zip" download title="Download source">↓</a>
       </div>
 
       <div class="item-wrap">
@@ -105,6 +122,7 @@
             </div>
           </div>
         </a>
+        <a class="dl-btn" href="https://github.com/mattjss/terminal-bio/archive/refs/heads/main.zip" download title="Download source">↓</a>
       </div>
 
       <div class="item-wrap">
@@ -120,6 +138,7 @@
             </div>
           </div>
         </a>
+        <a class="dl-btn" href="https://github.com/mattjss/terminal/archive/refs/heads/main.zip" download title="Download source">↓</a>
       </div>
 
       <div class="item-wrap">
@@ -135,6 +154,7 @@
             </div>
           </div>
         </a>
+        <a class="dl-btn" href="https://github.com/mattjss/cloth/archive/refs/heads/main.zip" download title="Download source">↓</a>
       </div>
 
       <div class="item-wrap">
@@ -150,8 +170,8 @@
             </div>
           </div>
         </a>
+        <a class="dl-btn" href="https://github.com/mattjss/Vector/archive/refs/heads/main.zip" download title="Download source">↓</a>
       </div>
-
 
       <div class="item-wrap">
         <a class="item" href="https://mattjss.github.io/Spider-Mesh/" target="_blank">
@@ -166,6 +186,7 @@
             </div>
           </div>
         </a>
+        <a class="dl-btn" href="https://github.com/mattjss/Spider-Mesh/archive/refs/heads/main.zip" download title="Download source">↓</a>
       </div>
 
       <div class="item-wrap">
@@ -181,6 +202,7 @@
             </div>
           </div>
         </a>
+        <a class="dl-btn" href="https://github.com/mattjss/flock/archive/refs/heads/main.zip" download title="Download source">↓</a>
       </div>
 
       <div class="item-wrap">
@@ -196,6 +218,7 @@
             </div>
           </div>
         </a>
+        <a class="dl-btn" href="https://github.com/mattjss/Sync/archive/refs/heads/main.zip" download title="Download source">↓</a>
       </div>
 
       <div class="item-wrap">
@@ -211,6 +234,7 @@
             </div>
           </div>
         </a>
+        <a class="dl-btn" href="https://github.com/mattjss/Save-Button/archive/refs/heads/main.zip" download title="Download source">↓</a>
       </div>
 
       <div class="item-wrap">
@@ -226,6 +250,7 @@
             </div>
           </div>
         </a>
+        <a class="dl-btn" href="https://github.com/mattjss/Agentic-Animations-2/archive/refs/heads/main.zip" download title="Download source">↓</a>
       </div>
 
       <div class="item-wrap">
@@ -241,6 +266,7 @@
             </div>
           </div>
         </a>
+        <a class="dl-btn" href="https://github.com/mattjss/Matrix-Loader/archive/refs/heads/main.zip" download title="Download source">↓</a>
       </div>
 
       <div class="item-wrap">
@@ -256,6 +282,7 @@
             </div>
           </div>
         </a>
+        <a class="dl-btn" href="https://github.com/mattjss/Logo-Carousel/archive/refs/heads/main.zip" download title="Download source">↓</a>
       </div>
 
     </div>
